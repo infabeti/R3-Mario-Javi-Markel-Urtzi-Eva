@@ -1,0 +1,27 @@
+body {
+	/*background-color: red;*/
+}
+
+div {
+	border: 1px solid black;
+}
+#header {
+	padding: 1em;
+	margin-bottom: 1em;
+}
+#header h1 {
+	text-align: center;
+}
+#section {
+	margin: 0 auto;
+}
+.article {
+	margin: 0 auto;
+	margin: .5em 0;
+
+}
+.descripcion{
+	padding-bottom: 10%;
+}
+.foto-restaurante {
+}
