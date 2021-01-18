@@ -259,6 +259,25 @@ a {
 
 }
 
+
+/***********RESTAURANTES*************************/
+.cabecera-min {
+	height: 150px;
+} 
+#section {
+	margin: 0 auto;
+}
+.article * { 
+	border:1px solid black; /*Esta regla es sólo para ver los componentes para la maquetación*/
+}
+.article {
+	margin: 0 auto;
+	margin: .5em 0;
+
+}
+.descripcion{
+	padding-bottom: 10%;
+}
 /*-------------footer-------*/
 .footer{
 	width: 100%;
