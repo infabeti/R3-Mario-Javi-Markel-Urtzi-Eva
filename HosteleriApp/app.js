@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
   
   
 });
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public"),{extensions: ['html']} ));
 
 app.listen(8000, () => {
   console.log('Example app listening on port 8000!')
