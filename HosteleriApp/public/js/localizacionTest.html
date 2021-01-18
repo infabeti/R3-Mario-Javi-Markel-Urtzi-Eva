@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Mi jQuery plugin</title>
+	<script src="jquery.min.js"></script>
+	<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEqb60MSN1_shPGAY5H9rcHv0L71eKCRw">
+	</script>
+	<script src="localizacion.js"></script>
+	<style>
+	#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+	#map2 {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+	</style>
+	<script>
+	$(document).ready(function() {
+	  initMap(document.getElementById("map"),43.263012,-2.934985);
+	  initMap(document.getElementById("map2"),43.297691,-2.985980);
+	});
+	</script>
+</head>
+<body>
+	<h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+	<br>
+	<div id="map2"></div>
+</body>
+</html>
