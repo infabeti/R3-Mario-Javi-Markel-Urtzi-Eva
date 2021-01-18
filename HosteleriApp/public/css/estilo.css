@@ -1,0 +1,296 @@
+
+
+/*-----------------------------tipografiass ---------------------------------------------------------------------*/
+@font-face { 
+	font-family: Wildy; 
+    src: url('../fonts/Wildy-Sans.ttf');  
+    src: url('../fonts/Wildy\ Sans.otf');  
+}
+@font-face { 
+	font-family:Cafe; 
+    src: url('../fonts/Louis\ George\ Cafe.ttf');  
+    
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+* {
+
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Raleway', sans-serif;;
+     font-weight: normal;
+     overflow-x: hidden;
+}
+
+ul,li,ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 20px;
+	 font-size: 15px;
+	 font-family: Cafe;
+
+}
+
+a {
+     color: #ffffff;
+     text-decoration: none;
+     outline: none;
+}
+/*-------------------header-----------------------*/
+.espacio_logo{ 
+	width: 100%; float: left; padding-bottom: 20px;
+}
+.logo{ 
+	width: 23%; float: left; 
+}
+
+.cabecera{
+	width: 100%;
+	float: left;
+	background-image: url(../images/fondo3.jpg);
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size:cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+	color: #ffffff;
+	border-bottom: #dd825e71 20px solid;
+}
+/*-------------------menu-----------------------*/
+.menu-principal {
+	padding-left: 35%;
+	font-size:250%;
+	font-family: Wildy;
+	font-weight: 450;
+
+
+}
+.menu-principal nav{
+	vertical-align: right;
+	text-align: center;
+}
+.menu-principal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+  
+.menu-principal li {
+	display: inline-block;
+	padding: 0 10px;
+}
+  
+.menu-principal a {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none;
+}
+/*-------------------menu hover-----------------------*/
+.menu-principal a:hover{
+	color: rgba(255, 255, 255, 0.671);
+	text-decoration: none;
+}
+  
+.menu-principal a:before, a:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: -2px;
+	background: rgba(255, 255, 255, 0.671);
+}
+  
+.menu-principal a:before {
+	left: 0;
+}
+.menu-principal a:after {
+	right: 0;
+	background: rgba(255, 255, 255, 0.671);
+	transition: width 0.8s linear;
+}
+  
+.menu-principal a:hover:before {
+	background: rgba(255, 255, 255, 0.671);
+	width: 100%;
+	transition: width 0.5s linear;
+}
+  
+.menu-principal a:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+}
+
+/*------------------seccion texto--------*/
+.seccion_texto{
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 40px;
+}
+
+.texto_titulo{
+	width: 100%;
+	float: left;
+	text-align: center;
+	color: #030907;
+	font-weight: 600;
+	font-family: Wildy;
+	font-size:500%;
+
+
+}
+.texto_parrafo{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 130%;
+}
+
+.color{
+	color: #dd825e;
+}
+/*------------------seccion apartados--------*/
+.seccion_apartados{
+	width: 100%;
+	float: left;
+}
+
+.caja_apartados{
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+	border-radius: 30px;
+	padding: 20px;
+    box-shadow: 0px 0px 8px 0px;
+}
+
+.icono{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.caja_titulo{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;	
+	color: #dd825e;
+	font-family: Wildy;
+	font-weight: 600;
+	font-size: 400%;
+	
+}
+
+.caja_texto{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;	
+	color: #000;
+	margin-left: 0;
+	font-family: Cafe;
+	font-size: 115%;
+}
+/*---------seccion1---------*/
+.seccion1{ 
+	width: 100%;
+	float: left;
+	background-color: #dd825e;
+
+    height: auto; 
+	margin-top: 70px; 
+	margin-bottom: 20px;
+	position: relative;
+	padding: 90px 0;
+
+ }
+
+
+.imagenes{
+	margin: 30px;
+	width: 100%;
+    margin-left: 0px;
+}
+
+.seccion1_zona_texto{
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+    padding: 12px 40px 0px 40px;
+	margin-top: 31px;
+	font-family: Wildy;
+
+}
+.seccion1_titulo{
+	width: 100%;
+	float: left;
+	font-family: Wildy;
+
+}
+
+.seccion1_titulo2{
+	color: #000;
+	font-weight: 500;
+	font-family: Cafe;
+	font-size: 150%;
+}
+.seccion1_texto{
+	font-size: 17px;
+    color: #110f0a;
+    margin-left: 0;
+    padding-bottom: 20px;
+    z-index: 9;
+	position: relative;
+	font-family: Cafe;
+
+}
+
+/*-------------footer-------*/
+.footer{
+	width: 100%;
+	float: left;
+	background-color: #2c2c2c;
+	padding-bottom: 30px;	
+	padding-top: 30px;
+	margin-top: -80px;
+}	
+.footer1{
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+	padding-top: 65px;
+	text-align: center;
+}
+
+.menu_rss {
+	width: 20%;
+    margin: 0 auto;
+	text-align: center;
+}
+.menu_rss ul {
+	 margin: 0px; padding: 0px;
+}	
+.menu_rss li { 
+	float: left; padding-left: 6px; padding-right: 25px; 
+}
+
+
+
+
+
+
+
