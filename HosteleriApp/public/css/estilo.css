@@ -268,15 +268,84 @@ a {
 	margin: 0 auto;
 }
 .article * { 
-	border:1px solid black; /*Esta regla es sólo para ver los componentes para la maquetación*/
+	/*border:1px solid black; [>Esta regla es sólo para ver los componentes para la maquetación<]*/
 }
 .article {
-	margin: 0 auto;
+	padding: 1.5em;
 	margin: .5em 0;
+	color: white;
 
 }
-.descripcion{
-	padding-bottom: 10%;
+.article h3 {
+	font-size: 250%;
+	text-align: center;
+	padding-bottom: .5em;
+	border-bottom: 1px solid white;
+}
+.article p {
+	font-size: 140%;
+}
+.descripcion {
+	padding:1em;
+	background-color: #dd825e;
+}
+.horario {
+	width: max-content;
+	text-align: justify;
+}
+.horario table caption{
+	color: white;
+	caption-side: top;
+	font-size: 150%;
+	text-align: center;
+}
+.horario td {
+	padding: .5em;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: white;
+}
+.horario tr:last-child td {
+	border: none;
+}
+.horario table td:last-child {
+	text-align: right;
+}
+/*.telefono {*/
+/*}*/
+.other-content {
+	height: 100%;
+	/*background-color: rgba(255,255,255, 0.26);*/
+	background-color: rgba(0, 0, 0, 0.58);
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: white;
+}
+.other-content div {
+	padding: .5em;
+}
+.direccion {
+	border-bottom:1px solid white;
+}
+.direccion, .telefono {
+	margin-left:
+}
+.horario{
+	padding: .5em;
+	float: left;
+	margin: 1em;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+	border-color:  white;
+	/*background-color: rgba(255,255,255, 0.26);*/
+	background-color: rgba(0, 0, 0, 0.58);
+}
+.carousel-control-prev, .carousel-control-next, {
+	background-color: red !important;
+}
+#establecimiento-enol {
+	width: 100%;
+	height: 100%;
 }
 /*-------------footer-------*/
 .footer{
