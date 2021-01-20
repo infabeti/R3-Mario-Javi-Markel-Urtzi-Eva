@@ -285,13 +285,27 @@ a {
 .article p {
 	font-size: 140%;
 }
-#carouselExampleControls{
-	width: 70%;
-	height: 50%;
+.foto-restaurante {
+	padding:0;
+}
+#carouselExampleControls, #carouselExampleControls2, #carouselExampleControls3, #carouselExampleControls4 {
+	border-top: 2px solid #dd825e;
+	border-right: 2px solid #dd825e;
+	border-left: 2px solid #dd825e;
+	border-bottom: 2px solid #fff;
+	padding:0;
+	margin:0;
+	height: 500px;
+}
+#carouselExampleControls img{
+	height:496px;
 }
 .descripcion {
 	padding:1em;
 	background-color: #dd825e;
+}
+.restaurante-info {
+	background-color: rgba(0, 0, 0, 0.58);
 }
 .horario {
 	width: max-content;
@@ -321,11 +335,12 @@ a {
 /*.telefono {*/
 /*}*/
 .other-content {
+	/*margin: 1em 1%;*/
 	font-size: 70%;
 	height: 100%;
 	/*background-color: rgba(255,255,255, 0.26);*/
 	background-color: rgba(0, 0, 0, 0.58);
-	border-top: 1px solid;
+	border-top: 2px solid;
 	border-bottom: 1px solid;
 	border-color: white;
 }
@@ -350,16 +365,17 @@ a {
 	display: none;
 }
 .direccion, .telefono {
-	margin-left:
+	/*margin-left:*/
+	margin:0;
 }
 .horario{
-	padding: .5em;
 	float: left;
-	margin: 1em;
+	/*margin: 1em 1%;*/
+	margin-left: 4%;
 	border-bottom: 2px solid;
 	border-top: 2px solid;
 	border-color:  white;
-	/*background-color: rgba(255,255,255, 0.26);*/
+
 	background-color: rgba(0, 0, 0, 0.58);
 }
 .carousel-control-prev, .carousel-control-next, {
