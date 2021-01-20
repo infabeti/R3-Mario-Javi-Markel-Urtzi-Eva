@@ -16,6 +16,10 @@
 		<!--Estilos propios-->
 		<link rel="stylesheet" type="text/css" href="./css/restaurantes.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<!--Scripts propios-->
+		<script defer src="js/restaurantes.js"></script>
+		<script defer src="js/localizacion.js"></script>
+		<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 	</head>
 
 	<body>
@@ -57,8 +61,8 @@
 				<!--Restaurante 1-->
 				<div class="article col">
 					<div class="row">
-						<div class="foto-restaurante col-sm-12 col-md-4 order-md-2">
-						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+						<div class="foto-restaurante col-sm-12 col-md-12 " >
+						<div id="carouselExampleControls" class="carousel slide">
 						  <div class="carousel-inner">
 						    <div class="carousel-item active">
 						      <img class="d-block w-100" src="images/restaurantes/Enol/enol-establecimiento.png" alt="First slide">
@@ -82,7 +86,7 @@
 						</div>
 							<!--<img id="establecimiento-enol" src="images/restaurantes/Enol/enol-establecimiento.png" alt="">-->
 						</div>
-						<div class="descripcion col-sm-12 col-md-8">
+						<div class="descripcion col-md-12">
 							<div class="row">
 							<div class="description-header col-md-12">
 							<h3>Enol</h3>	
@@ -94,7 +98,7 @@
 				Es ideal para comidas de empresa y familias con niños.
 							</p>
 							</div>
-							<div class="horario col-md-3">
+							<div class="horario col-md-5">
 							<table>
 								<caption>Horario:</caption>
 								<thead></thead>
@@ -130,10 +134,14 @@
 								</tbody>
 							</table>
 							</div>
-							<div class="other-content col-md-8">
+							<div class="other-content col-sm-4 col-md-6">
 								<div class="direccion">
 								<h4>Dirección</h4>
 								<p class="direccion-p">Calle Licenciado Poza / Lizentziatuaren, Poza Lizentziatuaren Kalea, 73, 73, 48013 Bilbao, BI</p>
+								<p class="mapa-p">»<span class="mapa">Haz click aquí para más información</span></p>
+								<div id="map-box">
+								</div>
+
 								</div>
 							<div class="telefono col-md-8">
 								<h4>Teléfono</h4>

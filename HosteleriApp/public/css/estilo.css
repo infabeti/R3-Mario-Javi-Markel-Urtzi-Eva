@@ -34,8 +34,8 @@ ul,li,ol {
 
 p {
      margin: 20px;
-	 font-size: 15px;
-	 font-family: Cafe;
+ font-size: 15px;
+ font-family: Cafe;
 
 }
 
@@ -285,6 +285,10 @@ a {
 .article p {
 	font-size: 140%;
 }
+#carouselExampleControls{
+	width: 70%;
+	height: 50%;
+}
 .descripcion {
 	padding:1em;
 	background-color: #dd825e;
@@ -292,6 +296,9 @@ a {
 .horario {
 	width: max-content;
 	text-align: justify;
+}
+.horario table {
+	margin: 0 auto;
 }
 .horario table caption{
 	color: white;
@@ -314,6 +321,7 @@ a {
 /*.telefono {*/
 /*}*/
 .other-content {
+	font-size: 70%;
 	height: 100%;
 	/*background-color: rgba(255,255,255, 0.26);*/
 	background-color: rgba(0, 0, 0, 0.58);
@@ -326,6 +334,20 @@ a {
 }
 .direccion {
 	border-bottom:1px solid white;
+}
+.direccion p, .telefono p{
+	margin: 1em 2%;
+}
+
+.article .mapa-p span.mapa {
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 115%;
+	font-style: italic;
+}
+#map-box {
+	height:100%;
+	display: none;
 }
 .direccion, .telefono {
 	margin-left:
