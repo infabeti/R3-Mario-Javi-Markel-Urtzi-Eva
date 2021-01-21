@@ -297,7 +297,7 @@ a {
 	margin:0;
 	height: 500px;
 }
-#carouselExampleControls img{
+#carouselExampleControls img, #carouselExampleControls2 img, #carouselExampleControls3 img, #carouselExampleControls4 img{
 	height:496px;
 }
 .descripcion {
@@ -335,43 +335,48 @@ a {
 /*.telefono {*/
 /*}*/
 .other-content {
-	/*margin: 1em 1%;*/
+	padding-top: 1em;
 	font-size: 70%;
 	height: 100%;
-	/*background-color: rgba(255,255,255, 0.26);*/
 	background-color: rgba(0, 0, 0, 0.58);
 	border-top: 2px solid;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
 	border-color: white;
 }
 .other-content div {
 	padding: .5em;
 }
-.direccion {
-	border-bottom:1px solid white;
+.web-sitio {
+	/*border-bottom:1px solid white;*/
 }
-.direccion p, .telefono p{
+#ultimo-sitio {
+	padding-bottom: 24px
+}
+.direccion p, .telefono p .web-sitio p{
 	margin: 1em 2%;
 }
 
-.article .mapa-p span.mapa {
+.article .mapa-p span.mapa, a.web-sitio {
 	cursor: pointer;
 	text-decoration: underline;
 	font-size: 115%;
 	font-style: italic;
 }
+span.mapa:hover, a.web-sitio:hover {
+	color: #dd825e;
+}
 #map-box {
 	height:100%;
 	display: none;
 }
-.direccion, .telefono {
+.direccion, .telefono .web-sitio{
 	/*margin-left:*/
 	margin:0;
 }
 .horario{
 	float: left;
-	/*margin: 1em 1%;*/
-	margin-left: 4%;
+	/*[>margin: 1em 1%;<]*/
+	/*margin-left: 4%;*/
 	border-bottom: 2px solid;
 	border-top: 2px solid;
 	border-color:  white;
