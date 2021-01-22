@@ -266,7 +266,7 @@ a {
 	height: 150px;
 } 
 #section {
-	margin: 0 auto;
+	margin-top:2%;
 }
 .article * { 
 	/*border:1px solid black; [>Esta regla es sólo para ver los componentes para la maquetación<]*/
@@ -439,6 +439,7 @@ margin-left: 12%;
 	font-weight:600;
 	color:  #dd825e;
 	margin-left: 5%;
+	
 }
 .ficha-cafe p{
 	font-size: 120%;
@@ -461,7 +462,7 @@ margin-left: 12%;
 }
 /**************************BARES****************************/
 .section-bares {
-	border: 1px solid black;
+	border: 1px solid black;	background-color:#dd825e2c;
 }
 #section {
 	/*border: 1px solid black;[>para maquetar<]*/
@@ -470,15 +471,23 @@ margin-left: 12%;
 	padding-left: .7em;
 	font-family: Wildy;
 	font-size:3em;
+	font-weight: 700;
 }
+
+.card {
+	padding: 2%;
+}
+
 .img-bar {
 	margin: 2em 0;
+	margin-top:2%;
 }
 
 .img-bar  img{
 	margin: auto;
-	width:250px;
-	height: 250px;
+	width:100%;
+	margin-bottom: 3%;
+
 }
 .mapa {
 	width: 100%;
@@ -491,6 +500,9 @@ margin-left: 12%;
 .card-body .card-title{
 	text-align: center;
 }
+.card-text {
+	font-size: 120%;
+}
 .btn-warning, .bg-warning{
 	background-color: #dd825e!important;
 }
@@ -500,14 +512,14 @@ margin-left: 12%;
 .collapse, .collapsing, .card-body{
 	text-align: center;
 	border-radius: 20px;
-	border: 2px solid black;
+	
 	box-shadow: 3px 2px 5px grey;
 }
 .more-info {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgba(43, 34, 34, 0.58);
 	padding-bottom: .6em;
 	margin-bottom: .6em;
-	background-color: rgba(0,0,0, 0.58);
+	background-color:  rgba(43, 34, 34, 0.767);
 }
 .more-info:first-child {
 	border-radius: 20px 20px 0 0;
@@ -520,7 +532,7 @@ margin-left: 12%;
 	
 }
 .ampliar-mapa {
-	background-color: rgba(0,0,0, 0.58);
+	background-color:rgba(43, 34, 34, 0.767);
 	color:white;
 	border-radius: 0 0 20px 20px;
 }
