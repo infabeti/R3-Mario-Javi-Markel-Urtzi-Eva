@@ -261,6 +261,7 @@ a {
 
 
 /***********RESTAURANTES*************************/
+
 .cabecera-min {
 	height: 150px;
 } 
@@ -277,10 +278,15 @@ a {
 
 }
 .article h3 {
-	font-size: 250%;
+	font-family: Wildy;
+	font-size: 3.5em;
 	text-align: center;
 	padding-bottom: .5em;
 	border-bottom: 1px solid white;
+}
+.article h4 {
+	font-family: Wildy;
+	font-size: 3em;
 }
 .article p {
 	font-size: 140%;
@@ -296,6 +302,12 @@ a {
 	padding:0;
 	margin:0;
 	height: 500px;
+}
+.carousel-control-prev, .carousel-control-next {
+	background-color: #000;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background-color: orange;
 }
 #carouselExampleControls img, #carouselExampleControls2 img, #carouselExampleControls3 img, #carouselExampleControls4 img{
 	height:496px;
@@ -315,9 +327,10 @@ a {
 	margin: 0 auto;
 }
 .horario table caption{
+	font-family: Wildy;
+	font-size: 3em;
 	color: white;
 	caption-side: top;
-	font-size: 150%;
 	text-align: center;
 }
 .horario td {
@@ -336,6 +349,7 @@ a {
 /*}*/
 .other-content {
 	padding-top: 1em;
+	padding-bottom:11px;
 	font-size: 70%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.58);
@@ -390,12 +404,22 @@ span.mapa:hover, a.web-sitio:hover {
 	width: 100%;
 	height: 100%;
 }
+/**************************CAFETERIAS**********************/
+.mapa{
+	height:200px;
+	width:50%;
+}
 /**************************BARES****************************/
 .section-bares {
 	border: 1px solid black;
 }
 #section {
-	border: 1px solid black;
+	/*border: 1px solid black;[>para maquetar<]*/
+}
+.card-title {
+	padding-left: .7em;
+	font-family: Wildy;
+	font-size:3em;
 }
 .img-bar {
 	margin: 2em 0;
