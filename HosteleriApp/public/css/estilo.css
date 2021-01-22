@@ -390,6 +390,22 @@ span.mapa:hover, a.web-sitio:hover {
 	width: 100%;
 	height: 100%;
 }
+/**************************BARES****************************/
+.section-bares {
+	border: 1px solid black;
+}
+#section {
+	border: 1px solid black;
+}
+.img-bar {
+	margin: 2em 0;
+}
+
+.img-bar  img{
+	margin: auto;
+	width:250px;
+	height: 250px;
+}
 /*-------------footer-------*/
 .footer{
 	width: 100%;
