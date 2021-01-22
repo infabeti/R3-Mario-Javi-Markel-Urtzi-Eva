@@ -307,7 +307,7 @@ a {
 	background-color: #000;
 }
 .carousel-control-prev:hover, .carousel-control-next:hover {
-	background-color: orange;
+	background-color: rgba(255, 254, 251, 0.384);
 }
 #carouselExampleControls img, #carouselExampleControls2 img, #carouselExampleControls3 img, #carouselExampleControls4 img{
 	height:496px;
@@ -315,6 +315,9 @@ a {
 .descripcion {
 	padding:1em;
 	background-color: #dd825e;
+}
+.descripcion h3{
+font-weight:700;
 }
 .restaurante-info {
 	background-color: rgba(0, 0, 0, 0.58);
@@ -489,10 +492,10 @@ margin-left: 12%;
 	text-align: center;
 }
 .btn-warning, .bg-warning{
-	background-color: #ff991a !important;
+	background-color: #dd825e!important;
 }
 .btn-warning:focus, .bg-warning:focus{
-	background-color: #ff991a !important;
+	background-color: #dd825e !important;
 }
 .collapse, .collapsing, .card-body{
 	text-align: center;
@@ -523,6 +526,12 @@ margin-left: 12%;
 }
 .mapa-dialog {
 	display: none;
+}
+#collapse-bar1{
+
+}
+.card-text{
+	padding: 1%;
 }
 /*-------------footer-------*/
 .footer{
