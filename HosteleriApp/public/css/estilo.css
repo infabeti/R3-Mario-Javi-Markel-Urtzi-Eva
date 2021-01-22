@@ -447,16 +447,32 @@ span.mapa:hover, a.web-sitio:hover {
 .btn-warning:focus, .bg-warning:focus{
 	background-color: #ff991a !important;
 }
-.collapse .card-body{
+.collapse, .collapsing, .card-body{
 	text-align: center;
+	border-radius: 20px;
+	border: 2px solid black;
+	box-shadow: 3px 2px 5px grey;
+}
+.more-info {
+	border-bottom: 1px solid black;
+	padding-bottom: .6em;
+	margin-bottom: .6em;
+	background-color: rgba(0,0,0, 0.58);
+}
+.more-info:first-child {
+	border-radius: 20px 20px 0 0;
 }
 .card-body h4 {
 	font-family: Wildy;
 	text-align: center;
 	padding: .2em 0;
-	font-size: 3em;
-	color: black;
+	font-size: 2.5em;
 	
+}
+.ampliar-mapa {
+	background-color: rgba(0,0,0, 0.58);
+	color:white;
+	border-radius: 0 0 20px 20px;
 }
 .mapa-dialog {
 	display: none;
