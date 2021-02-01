@@ -1,0 +1,588 @@
+
+
+/*-----------------------------tipografiass ---------------------------------------------------------------------*/
+@font-face { 
+	font-family: Wildy; 
+    src: url('../fonts/Wildy-Sans.ttf');  
+    src: url('../fonts/Wildy\ Sans.otf');  
+}
+@font-face { 
+	font-family:Cafe; 
+    src: url('../fonts/Louis\ George\ Cafe.ttf');  
+    
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+* {
+
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Raleway', sans-serif;;
+     font-weight: normal;
+     overflow-x: hidden;
+}
+
+ul,li,ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 20px;
+ font-size: 15px;
+ font-family: Cafe;
+
+}
+
+a {
+     color: #ffffff;
+     text-decoration: none;
+     outline: none;
+}
+/*-------------------header-----------------------*/
+.espacio_logo{ 
+	width: 100%; float: left; padding-bottom: 20px;
+}
+.logo{ 
+	width: 23%; float: left; 
+}
+
+.cabecera{
+	width: 100%;
+	float: left;
+	background-image: url(../images/fondo3.jpg);
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size:cover;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+	color: #ffffff;
+	border-bottom: #dd825e71 20px solid;
+}
+/*-------------------menu-----------------------*/
+.menu-principal {
+	padding-left: 35%;
+	font-size:250%;
+	font-family: Wildy;
+	font-weight: 450;
+
+
+}
+.menu-principal nav{
+	vertical-align: right;
+	text-align: center;
+}
+.menu-principal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+  
+.menu-principal li {
+	display: inline-block;
+	padding: 0 10px;
+}
+  
+.menu-principal a {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: 8px 0;
+	color: #fff;
+	text-decoration: none;
+}
+/*-------------------menu hover-----------------------*/
+.menu-principal a:hover{
+	color: rgba(255, 255, 255, 0.671);
+	text-decoration: none;
+}
+  
+.menu-principal a:before, a:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: -2px;
+	background: rgba(255, 255, 255, 0.671);
+}
+  
+.menu-principal a:before {
+	left: 0;
+}
+.menu-principal a:after {
+	right: 0;
+	background: rgba(255, 255, 255, 0.671);
+	transition: width 0.8s linear;
+}
+  
+.menu-principal a:hover:before {
+	background: rgba(255, 255, 255, 0.671);
+	width: 100%;
+	transition: width 0.5s linear;
+}
+  
+.menu-principal a:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+}
+
+/*------------------seccion texto--------*/
+.seccion_texto{
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 40px;
+}
+
+.texto_titulo{
+	width: 100%;
+	float: left;
+	text-align: center;
+	color: #030907;
+	font-weight: 600;
+	font-family: Wildy;
+	font-size:500%;
+
+
+}
+.texto_parrafo{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 130%;
+}
+
+.color{
+	color: #dd825e;
+}
+/*------------------seccion apartados--------*/
+.seccion_apartados{
+	width: 100%;
+	float: left;
+}
+
+.caja_apartados{
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+	border-radius: 30px;
+	padding: 20px;
+    box-shadow: 0px 0px 8px 0px;
+}
+
+.icono{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.caja_titulo{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;	
+	color: #dd825e;
+	font-family: Wildy;
+	font-weight: 600;
+	font-size: 400%;
+	
+}
+
+.caja_texto{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;	
+	color: #000;
+	margin-left: 0;
+	font-family: Cafe;
+	font-size: 115%;
+}
+/*---------seccion1---------*/
+.seccion1{ 
+	width: 100%;
+	float: left;
+	background-color: #dd825e;
+
+    height: auto; 
+	margin-top: 70px; 
+	margin-bottom: 20px;
+	position: relative;
+	padding: 90px 0;
+
+ }
+
+
+.imagenes{
+	margin: 30px;
+	width: 100%;
+    margin-left: 0px;
+}
+
+.seccion1_zona_texto{
+	width: 100%;
+	float: left;
+	background-color: #ffffff;
+    padding: 12px 40px 0px 40px;
+	margin-top: 31px;
+	font-family: Wildy;
+
+}
+.seccion1_titulo{
+	width: 100%;
+	float: left;
+	font-family: Wildy;
+
+}
+
+.seccion1_titulo2{
+	color: #000;
+	font-weight: 500;
+	font-family: Cafe;
+	font-size: 150%;
+}
+.seccion1_texto{
+	font-size: 17px;
+    color: #110f0a;
+    margin-left: 0;
+    padding-bottom: 20px;
+    z-index: 9;
+	position: relative;
+	font-family: Cafe;
+
+}
+
+
+/***********RESTAURANTES*************************/
+
+.cabecera-min {
+	height: 150px;
+} 
+#section {
+	margin-top:2%;
+}
+.article * { 
+	/*border:1px solid black; [>Esta regla es sólo para ver los componentes para la maquetación<]*/
+}
+.article {
+	padding: 1.5em;
+	margin: .5em 0;
+	color: white;
+
+}
+.article h3 {
+	font-family: Wildy;
+	font-size: 3.5em;
+	text-align: center;
+	padding-bottom: .5em;
+	border-bottom: 1px solid white;
+}
+.article h4 {
+	font-family: Wildy;
+	font-size: 3em;
+}
+.article p {
+	font-size: 140%;
+}
+.foto-restaurante {
+	padding:0;
+}
+#carouselExampleControls, #carouselExampleControls2, #carouselExampleControls3, #carouselExampleControls4 {
+	border-top: 2px solid #dd825e;
+	border-right: 2px solid #dd825e;
+	border-left: 2px solid #dd825e;
+	border-bottom: 2px solid #fff;
+	padding:0;
+	margin:0;
+	height: 500px;
+}
+.carousel-control-prev, .carousel-control-next {
+	background-color: #000;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background-color: rgba(255, 254, 251, 0.384);
+}
+#carouselExampleControls img, #carouselExampleControls2 img, #carouselExampleControls3 img, #carouselExampleControls4 img{
+	height:496px;
+}
+.descripcion {
+	padding:1em;
+	background-color: #dd825e;
+}
+.descripcion h3{
+font-weight:700;
+}
+.restaurante-info {
+	background-color: rgba(0, 0, 0, 0.58);
+}
+.horario {
+	width: max-content;
+	text-align: justify;
+}
+.horario table {
+	margin: 0 auto;
+}
+.horario table caption{
+	font-family: Wildy;
+	font-size: 3em;
+	color: white;
+	caption-side: top;
+	text-align: center;
+}
+.horario td {
+	padding: .5em;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: white;
+}
+.horario tr:last-child td {
+	border: none;
+}
+.horario table td:last-child {
+	text-align: right;
+}
+/*.telefono {*/
+/*}*/
+.other-content {
+	padding-top: 1em;
+	padding-bottom:11px;
+	font-size: 70%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.58);
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-color: white;
+}
+.other-content div {
+	padding: .5em;
+}
+.web-sitio {
+	/*border-bottom:1px solid white;*/
+}
+#ultimo-sitio {
+	padding-bottom: 24px
+}
+.direccion p, .telefono p .web-sitio p{
+	margin: 1em 2%;
+}
+
+.article .mapa-p span.mapa, a.web-sitio {
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 115%;
+	font-style: italic;
+}
+span.mapa:hover, a.web-sitio:hover {
+	color: #dd825e;
+}
+#map-box {
+	height:100%;
+	display: none;
+}
+.direccion, .telefono .web-sitio{
+	/*margin-left:*/
+	margin:0;
+}
+.horario{
+	float: left;
+	/*[>margin: 1em 1%;<]*/
+	/*margin-left: 4%;*/
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+	border-color:  white;
+
+	background-color: rgba(0, 0, 0, 0.58);
+}
+.carousel-control-prev, .carousel-control-next, {
+	background-color: red !important;
+}
+#establecimiento-enol {
+	width: 100%;
+	height: 100%;
+}
+/**************************CAFETERIAS**********************/
+.mapa{
+	height:200px;
+	width:50%;
+}
+
+
+#section-cafe{
+	background-color: #dd825e2c;
+}
+#section-cafe1{
+margin-left: 12%;
+}
+
+.ficha-cafe{
+	float: left;
+	background-color: #ffffff;
+	border-radius: 30px;
+	padding: 20px;
+	box-shadow: 0px 0px 8px 0px;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	height:1000px;
+
+}
+.ficha-cafe h3{
+	font-family: Wildy;
+	font-size: 350%;
+	font-weight:600;
+	color:  #dd825e;
+	margin-left: 5%;
+	
+}
+.ficha-cafe p{
+	font-size: 120%;
+
+}
+.ficha-cafe p:nth-of-type(2){
+	color:  #dd825e;
+
+}
+.ficha-cafe h4{
+	font-size: 150%;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.foto-cafe img{
+	border-radius: 2%;
+	width:330%;
+
+
+}
+/**************************BARES****************************/
+.section-bares {
+
+	background-color:#dd825e2c;
+}
+#section {
+	/*border: 1px solid black;[>para maquetar<]*/
+}
+.card-title {
+	padding-left: .7em;
+	font-family: Wildy;
+	font-size:3em;
+	font-weight: 700;
+}
+
+.card {
+	padding: 2%;
+}
+
+.img-bar {
+	margin: 2em 0;
+	margin-top:2%;
+}
+
+.img-bar  img{
+	margin: auto;
+	width:100%;
+	margin-bottom: 3%;
+
+}
+.mapa {
+	width: 100%;
+}
+
+.mas-info {
+	display:block;
+	margin:0 auto;
+}
+.card-body .card-title{
+	text-align: center;
+}
+.card-text {
+	font-size: 120%;
+}
+.btn-warning, .bg-warning{
+	background-color: #dd825e!important;
+}
+.btn-warning:focus, .bg-warning:focus{
+	background-color: #dd825e !important;
+}
+.collapse, .collapsing, .card-body{
+	text-align: center;
+	border-radius: 20px;
+	
+	box-shadow: 3px 2px 5px grey;
+}
+.more-info {
+	border-bottom: 1px solid rgba(43, 34, 34, 0.58);
+	padding-bottom: .6em;
+	margin-bottom: .6em;
+	background-color:  rgba(43, 34, 34, 0.767);
+}
+.more-info:first-child {
+	border-radius: 20px 20px 0 0;
+}
+.card-body h4 {
+	font-family: Wildy;
+	text-align: center;
+	padding: .2em 0;
+	font-size: 2.5em;
+	
+}
+.ampliar-mapa {
+	background-color:rgba(43, 34, 34, 0.767);
+	color:white;
+	border-radius: 0 0 20px 20px;
+}
+.mapa-dialog {
+	display: none;
+}
+#collapse-bar1{
+
+}
+.card-text{
+	padding: 1%;
+}
+/*-------------footer-------*/
+.footer{
+	width: 100%;
+	float: left;
+	background-color: #2c2c2c;
+	padding-bottom: 30px;	
+	padding-top: 30px;
+	margin-top: -80px;
+	margin-top: 2%;
+}	
+.footer1{
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+	padding-top: 65px;
+	text-align: center;
+}
+
+.menu_rss {
+	width: 30%;
+    margin: 0 auto;
+	text-align: center;
+}
+.menu_rss ul {
+	 margin: 0px; padding: 0px;
+}	
+.menu_rss li { 
+	float: left; padding-left: 6px; padding-right: 25px; 
+}
+.menu_rss li :hover{ 
+	opacity: 70%;
+}
+
+
+
+
+
+
+
+

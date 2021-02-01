@@ -1,0 +1,42 @@
+	<title>Mi jQuery plugin</title>
+	<script src="jquery.min.js"></script>
+	<script src="localizacion.js"></script>
+	<style>
+	#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+	#map2 {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+	</style>
+	<script>
+	//EJEMPLOS DE COMO LLAMAR LAS FUNCIONES DE GEOLOCALIZACION
+	function MapsListo() {
+	  initMap(document.getElementById("map"),43.263012,-2.934985);
+	  initMap(document.getElementById("map2"),43.297691,-2.985980);
+	  $("#distanciaOutput").html(distanciaPuntos(43.263012,-2.934985,43.297691,-2.985980));
+	  distanciaCliente($("#distanciaClient"),43.297691,-2.985980)
+	}
+	
+	</script>
+</head>
+<body>
+	<h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+	<br>
+	<div id="map2"></div>
+	<h3>DISTANCIA BILBAO BARAKALDO</h3>
+	<p id="distanciaOutput"></p>
+	<h3>DISTANCIA USUARIO BARAKALDO</h3>
+	<p id="distanciaClient"></p>
+	
+</body>
+</html>

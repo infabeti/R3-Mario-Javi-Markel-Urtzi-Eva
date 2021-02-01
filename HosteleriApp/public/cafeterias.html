@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Restaurantes</title>
+		<!--Bootstrap CSS-->
+		<link rel="stylesheet" href="css/bootstrap-4.5.3-dist/bootstrap.min.css">
+		<!--JQuery-->
+		<script defer src="js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+
+		<!--Popper-->
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+		<!--Bootstrap JS-->
+		<script defer src="js/bootstrap-4.5.3-dist/bootstrap.min.js"></script>
+
+		<!--JQuery UI-->
+		<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+		<!--Estilos propios-->
+		<link rel="stylesheet" type="text/css" href="./css/restaurantes.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<!--Scripts propios-->
+		<script defer src="js/restaurantes.js"></script>
+		<script defer src="js/localizacion.js"></script>
+		<script defer src="js/cafeterias.js"></script>
+	</head>
+	<body>
+	<div id="container">
+
+	<header class="section">
+		<div class="cabecera cabecera-min">
+			<!-- menu y logo -->
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+							<div class="full">
+								<div class="espacio_logo">
+									<div class="logo"><a href="/"><img src="images/LOGO1.png" style="opacity: 75%;max-width: 100%;"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+							<nav class="menu-principal">
+								<ul>
+									<li><a href="/">Inicio</a></li>
+									<li><a href="bares">Bares</a></li>
+									<li><a href="restaurantes">Restaurantes</a></li>
+									<li><a href="cafeterias">Cafeterías</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+		<div class="row justify-content-center">
+			<div id="section-cafe" class="col-12 col-sm-12 col-md-12 ">
+				<div id="section-cafe1" >
+				<!--Cafeteria 1-->
+				<div class="ficha-cafe  col-12 col-sm-12 col-md-12 col-lg-5 ">
+					<div class="row">
+						<div class="descripcion-cafe col-12 col-md-12">
+							<h3>Gran Stop</h3>	
+							<div class="foto-cafe col-sm-4 col-4 col-md-4"><img src="images/restaurantes/cafe1.jpg"  alt="..." ></div>	
+							<p>¿Necesitas algo para reponer fuerzas? Déjate fascinar por nuestra variedad de tentempiés. Nuestra impresionante cafetería Gran Stop está bien situada y muy bien decorada para que puedas venir a tomar un café o a comer algo a mediodía y sentirte a gusto.</p>
+							<div id="map1" class="mapa" coordenadas="43.2996938, -3.0075740"></div>
+							<h4>Distancia al Bar</h4>
+							<p id="caf1"></p>
+						</div>  
+					
+					</div>
+				</div>
+
+				<!--Cafeteria 2-->
+				<div class=" ficha-cafe  col-12 col-sm-12 col-md-12 col-lg-5">
+					<div class="row">
+						<div class="descripcion-cafe col-12 col-md-12">
+							<h3>Café Morlans</h3>
+							<div class="foto-cafe col-2 col-md-4"><img src="images/restaurantes/cafe2.jpg"   alt="..."></div>	
+							<p>Nada más ver Azkue Fundazioa, ven a comer algo. Disfruta de uno de los mejores placeres de esta vida: unos generosos pintxos en agradable compañía. Cuando visites este café, tienes que probar su sorprendente café.</p>
+						
+							<div id="map2" class="mapa" coordenadas="43.27686669068822, -2.9569165274405407"></div>
+							<h4>Distancia al Bar</h4>
+							<p id="caf2"></p>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!--Cafeteria 3-->
+				<div class="ficha-cafe col-12 col-sm-12 col-md-12 col-lg-5">
+					<div class="row">
+						<div class="descripcion-cafe col-12 col-md-12">
+							<h3>Cafe Presley</h3>	
+							<div class="foto-cafe col-5 col-md-4"><img src="images/restaurantes/cafe4.jpg"   alt="..."></div>	
+							<p>Bar acogedor y con un servicio atento. Se pueden ver partidos y tiene una amplia terraza. Además está junto a la salida del metro.El ambiente de este establecimiento es atrayente.</p>
+					
+							<div id="map3" class="mapa" coordenadas="43.282482205517674, -2.957963863940423"></div>
+							<h4>Distancia al Bar</h4>
+							<p id="caf3"></p>
+						</div>
+			
+					</div>
+				</div>
+
+				<!--Cafeteria 4-->
+				<div class="ficha-cafe  col-12 col-sm-12 col-md-12 col-lg-5">
+					<div class="row">
+						<div class="descripcion-cafe col-12 col-md-12">
+							<h3>Cafeteria Iker</h3>	
+							<div class="foto-cafe col-5 col-md-4"><img src="images/restaurantes/cafe3.jpg"   alt="..."></div>	
+							<p>Ven a por unos tiernos pintxos si tienes hambre. No pierdas la oportunidad de probar su buen café. Su servicio siempre es correcto, no lo olvides.  Un 4,2 es lo que este café ha recibido según el sistema de valoraciones de Google.</p>
+					
+							<div id="map4" class="mapa" coordenadas="43.2749703611564, -2.9735129851118907"></div>
+							<h4>Distancia al Bar</h4>
+							<p id="caf4"></p>
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+			</div>
+		</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer1">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="menu_rss">
+							<ul>
+								<li><a href="#"><img src="images/facebook.png" width="30px"></a></li>
+								<li><a href="#"><img src="images/twitter.png" width="30px"></a></li>
+								<li><a href="#"><img src="images/instagram.png" width="30px"></a></li>
+								<li><a href="#"><img src="images/google.png" width="30px"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	</body>
+</html>
