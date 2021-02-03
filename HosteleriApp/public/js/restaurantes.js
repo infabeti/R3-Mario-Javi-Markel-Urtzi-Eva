@@ -40,10 +40,10 @@ $(function() {
 
 function menuClickado(){
 	var idpulsado=$(this).attr("id");
-	var menuJson={"primeros":[{"nombre":"Tremenda ensalada","precio":4.5},{"nombre":"Tremenda sopa","precio":7.0}],"segundos":[{"nombre":"Tremenda paella","precio":10.0}],"postres":[{"nombre":"Tremendo arroz con leche","precio":3.22},{"nombre":"Tremendo corneto","precio":1.5},{"nombre":"Tremenda manzana","precio":0.5}]};
 
-	//var menuconvertido=JSON.parse(menuJson);
-	//"http://localhost:8080/menu?menuid="+idpulsado
+
+
+
 
 
 	$.ajax({
@@ -63,25 +63,69 @@ function menuClickado(){
 		},
   
 		success: function(data) {
-		  console.log(data);
+			  console.log(data);
+
+			  var jsonData = jQuery.parseJSON(data);
+
+			  var primeros="";
+
+			  for(var i=0;i<jsonData.primeros.length;i++){
+				  primeros=primeros+jsonData.primeros[i].nombre+".........."+jsonData.primeros[i].precio+"€\n<br>";
+			  }
+			  var segundos="";
+
+			  for(var i=0;i<jsonData.segundos.length;i++){
+				  segundos=segundos+jsonData.segundos[i].nombre+".........."+jsonData.segundos[i].precio+"€<br>";
+			  }
+			  var postres="";
+
+			  for(var i=0;i<jsonData.postres.length;i++){
+				  postres=postres+jsonData.postres[i].nombre+".........."+jsonData.postres[i].precio+"€\n<br>";
+			  }
+
+			  $("body").append("<div id='dialogomenu'></div>\n");
+
+
+			  $("#dialogomenu").append("<h3>Primeros</h3>");
+			  $("#dialogomenu").append("<p>"+primeros+"</p>");
+
+
+			  $("#dialogomenu").append("<h3>Segundos</h3>");
+			  $("#dialogomenu").append("<p>"+segundos+"</p>");
+
+
+			  $("#dialogomenu").append("<h3>Postres</h3>");
+			  $("#dialogomenu").append("<p>"+postres+"</p>");
+		  
+			  $("#dialogomenu").dialog({
+				  close:function(){
+					$("#dialogomenu").remove();
+				  }
+			  });
+			  
+			  
+			
+			
 		},
   
 		error: function() {
-			console.log("Error en la peticion GET")
+			console.log("Error en la peticion GET");
+			alert("Error en la peticion GET");
 		}
 	  });
 	
 	
 
-	//imprimir datos en dialogo
+	
 
 	/*
-	$("body").append("<div id='dialogomenu'></div>\n");
-	alert(menuJson);
-	$("#menudialogo").append(menuconvertido.);
 
-	$("#menudialogo").dialog();
 	*/
+
+	/*
+{"primeros":[{"nombre":"Macarrones con chorizo","precio":7.49},{"nombre":"Revuelto de setas","precio":8.49},{"nombre":"Arroz Meloso con Rabo de Ternera al Toque de Curry","precio":10.49},{"nombre":"Romanescu con vinagreta de comino y naranja","precio":8.99},{"nombre":"Crema de calabaza","precio":6.49}],"segundos":[{"nombre":"Tallarines con pollo al pesto de avellanas y rúcula","precio":9.49},{"nombre":"Arroz con Conejo al Horno","precio":12.99},{"nombre":"Fingers de pollo al crujiente de cacahuete","precio":9.99},{"nombre":"Pollo de Navidad","precio":13.99},{"nombre":"Sardinas asadas en papillote","precio":9.49},{"nombre":"Huevos en cocotte al gorgonzola con rúcula","precio":11.49}],"postres":[{"nombre":"Mousse de frutas del bosque","precio":7.49},{"nombre":"Soufflé de mango y coco","precio":4.99},{"nombre":"Blondie con sorbete de vainilla","precio":8.49}]}
+	*/
+	
 
 	
 	
