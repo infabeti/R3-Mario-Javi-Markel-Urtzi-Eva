@@ -9,6 +9,7 @@ $(function() {
 	$('.carousel').carousel('pause');
 
 	$('.mapa').click(desplegar_mapa);
+	$(".linkmenu").click(menuClickado);
 	
 	function desplegar_mapa() {
 		var coordenadas = $(this).attr('coordenadas');
@@ -36,3 +37,55 @@ $(function() {
 		});
 	}
 });
+
+function menuClickado(){
+	var idpulsado=$(this).attr("id");
+	var menuJson={"primeros":[{"nombre":"Tremenda ensalada","precio":4.5},{"nombre":"Tremenda sopa","precio":7.0}],"segundos":[{"nombre":"Tremenda paella","precio":10.0}],"postres":[{"nombre":"Tremendo arroz con leche","precio":3.22},{"nombre":"Tremendo corneto","precio":1.5},{"nombre":"Tremenda manzana","precio":0.5}]};
+
+	//var menuconvertido=JSON.parse(menuJson);
+	//"http://localhost:8080/menu?menuid="+idpulsado
+
+
+	$.ajax({
+		type: 'GET',
+  
+		url: "http://localhost:8080/menu?menuid="+idpulsado,
+  
+		contentType: 'application/json',
+  
+		xhrFields: {
+		  withCredentials: false
+		},
+  
+		header: {
+		  "Access-Control-Allow-Headers": "X-Requested-With",
+		  "X-Requested-With": "XMLHttpRequest"        
+		},
+  
+		success: function(data) {
+		  console.log(data);
+		},
+  
+		error: function() {
+			console.log("Error en la peticion GET")
+		}
+	  });
+	
+	
+
+	//imprimir datos en dialogo
+
+	/*
+	$("body").append("<div id='dialogomenu'></div>\n");
+	alert(menuJson);
+	$("#menudialogo").append(menuconvertido.);
+
+	$("#menudialogo").dialog();
+	*/
+
+	
+	
+
+}
+
+
