@@ -41,6 +41,7 @@ $(function() {
 function menuClickado(){
 	var idpulsado=$(this).attr("id");
 
+		var nombre_restaurante = $(this).closest('div.descripcion').find('h3').html();
 
 
 
@@ -63,24 +64,24 @@ function menuClickado(){
 		},
   
 		success: function(data) {
-			  console.log(data);
+			  //console.log(data);
 
 			  var jsonData = jQuery.parseJSON(data);
 
 			  var primeros="";
 
 			  for(var i=0;i<jsonData.primeros.length;i++){
-				  primeros=primeros+jsonData.primeros[i].nombre+".........."+jsonData.primeros[i].precio+"€\n<br>";
+				  primeros=primeros+jsonData.primeros[i].nombre.padEnd(70, '.')+jsonData.primeros[i].precio+"€\n<br>";
 			  }
 			  var segundos="";
 
 			  for(var i=0;i<jsonData.segundos.length;i++){
-				  segundos=segundos+jsonData.segundos[i].nombre+".........."+jsonData.segundos[i].precio+"€<br>";
+				  segundos=segundos+jsonData.segundos[i].nombre.padEnd(70, '.')+jsonData.segundos[i].precio+"€<br>";
 			  }
 			  var postres="";
 
 			  for(var i=0;i<jsonData.postres.length;i++){
-				  postres=postres+jsonData.postres[i].nombre+".........."+jsonData.postres[i].precio+"€\n<br>";
+				  postres=postres+jsonData.postres[i].nombre.padEnd(70, '.')+jsonData.postres[i].precio+"€\n<br>";
 			  }
 
 			  $("body").append("<div id='dialogomenu'></div>\n");
@@ -97,11 +98,21 @@ function menuClickado(){
 			  $("#dialogomenu").append("<h3>Postres</h3>");
 			  $("#dialogomenu").append("<p>"+postres+"</p>");
 		  
+			//console.log(nombre_restaurante)
 			  $("#dialogomenu").dialog({
-				  close:function(){
+				title: "Menú "+nombre_restaurante,
+				close:function(){
 					$("#dialogomenu").remove();
-				  }
-			  });
+				  },
+				  width: "auto",
+				  // maxWidth: 660, // This won't work
+				  create: function( event, ui ) {
+				    // Set maxWidth
+				    $(this).css({
+					    "maxWidth" : "100%",
+				    });
+					  }
+				  });
 			  
 			  
 			
