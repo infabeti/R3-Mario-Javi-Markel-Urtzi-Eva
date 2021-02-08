@@ -1,8 +1,20 @@
 const express = require('express')
 const app = express();
+var cors = require('cors');
 const path = require('path');
 
+app.use(cors());
+
+
+// app.use(function (req,res,next){
+//   res.header("Access-Control-Allow-Origin","http://localhost:8080/menu");
+//   res.header("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type,Accept");
+//   next;
+// });
+
+
 app.use(express.static(path.join(__dirname, "public"),{extensions: ['html']} ));
+
 
 //Error pagina principal
 app.get('/', (req, res) => {
@@ -47,6 +59,8 @@ app.get('/bares', (req, res) => {
   });
   
 });
+
+
 
 
 app.listen(8000, () => {

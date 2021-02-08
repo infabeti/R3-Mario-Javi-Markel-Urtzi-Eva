@@ -5,12 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "node index",
-    "dev" : "nodemon index"
-
+    "dev": "nodemon index"
   },
   "author": "Grupo 4",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-generator": "^4.16.1"
   },
